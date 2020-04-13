@@ -1,0 +1,1 @@
+Desenvolvimento de um site focado em notícias sobre o Covid-19.
