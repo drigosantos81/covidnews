@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 News</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
     <div id="conteudo">
 
-        <div id="header">
+        <div class="header">
+            <div id="header">
 
-            <div class="logo">
-                <img src="https://image.flaticon.com/icons/svg/190/190562.svg" alt="">
+                <div class="logo">
+                    <img src="https://image.flaticon.com/icons/svg/190/190562.svg" alt="">
+                </div>
+    
+                <div class="titulo">
+                    <h1>COVID-19 NEWS</h1>
+                </div>
+                
             </div>
-
-            <div class="titulo">
-                <h1>COVID-19 NEWS</h1>
-            </div>
-            
         </div>
 
         <div id="navbar">
@@ -26,6 +29,27 @@
             <div><a href="quemsomos.html">Notícias</a></div>
             <div><a href="contato.html">Sobre</a></div>
             <div><a href="blog.html">Contato</a></div>
+        </div>
+
+        <div id="news">
+            <div class="newsDestaque">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div>
+                    <h3>Recuperada da Covid-19, enfermeira de São Luís afirma: 'Profissionais da saúde estão adoecendo'.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum lorem metus. Proin blandit sodales metus sit amet ornare. Nullam vitae mauris blandit, ultricies nisl in, vehicula lorem.
+                        Nullam vitae mauris blandit, ultricies nisl in, vehicula lorem., ultricies nisl in <a href="https://g1.globo.com/ma/maranhao/noticia/2020/04/13/recuperada-da-covid-19-enfermeira-de-sao-luis-afirma-profissionais-da-saude-estao-adoecendo.ghtml" target="_blank"><strong>...+ mais.</strong></a></p>
+                </div>                
+            </div>
+
+            <div class="newsDestaque">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div>
+                    <h3>Testes pré-clínicos na Itália de vacinas contra Covid-19 são positivos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum lorem metus. Proin blandit sodales metus sit amet ornare. Nullam vitae mauris blandit, ultricies nisl in, vehicula lorem.
+                        Nullam vitae mauris blandit, ultricies nisl in, vehicula lorem., ultricies nisl in <a href="https://www.correiodopovo.com.br/not%C3%ADcias/mundo/testes-pr%C3%A9-cl%C3%ADnicos-na-it%C3%A1lia-de-vacinas-contra-covid-19-s%C3%A3o-positivos-1.412255" target="_blank"><strong>...+ mais.</strong></a></p>
+                </div>                
+            </div>
+            
         </div>
 
         <div id="videos">
@@ -48,7 +72,6 @@
                 
             </div>
         </div>
-        
 
         <div id="tituloDestaque">
             <img src="https://image.flaticon.com/icons/svg/2368/2368393.svg" alt="">
@@ -77,18 +100,35 @@
 
     <div id="rodape">
 
-        <div id="redesSociais">
-            <img src="./images/email.jpg" alt="" width="15%">drigosantos@gmail.com <br/>
-            <img src="./images/whatsapp.png" alt="" width="15%">(71) 99105-6068 <br/>
-            <img src="./images/1github.png" alt="" width="15%">Github <br/>
-        </div>
+        <form id=formulario>
 
-        <div id="email">
+            <div class="form-group">
+                <label for="inputNome">Nome</label>
+                <input type="email" class="form-control" id="nome" placeholder="Digite aqui seu nome...">
+            </div>
+    
+            <div class="form-group">
+                <label for="inputEmail">E-mail</label>
+                <input type="email" class="form-control" id="nome" placeholder="Digite aqui seu E-mail...">
+            </div>
+    
+            <div class="form-group">
+              <label for="msgTextArea">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite aqui sua mensagem..."></textarea>
+            </div>
+    
+            <button>Enviar</button>
+    
+        </form>
+
+        <!-- <div id="email">
             <h3>Receba nossas novidades</h3>
             <input type="email" id="inputEmail" placeholder="Digite seu e-mail...">
             <button>Enviar</button>
-        </div>
+        </div> -->
     </div>
     
+    
+
 </body>
 </html>

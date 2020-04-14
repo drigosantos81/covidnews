@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: rgb(180, 180, 180);
+    background-color: #C4E5F2 !important;
     font: 400 14px Roboto, sans-serif;
 }
 
@@ -12,6 +12,11 @@ body {
     background-color: white;
     margin: 0% 10%;
     padding: 0%;
+}
+
+.header {
+    background-color: wheat;
+    padding: 15px 0px 1px 0px;
 }
 
 #header {
@@ -22,6 +27,7 @@ body {
     box-shadow: black 2px 2px 5px;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 .logo img {
@@ -42,10 +48,42 @@ a {
 }
 
 #navbar {
+    background-color: wheat;
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
-    margin: 10px 30px;
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+}
+
+#news {
+    margin: 0 30px;
+
+}
+
+.newsDestaque {
+    display: flex;
+    justify-content: space-between;
+    border: gray 0px solid;
+    margin: 20px 10px;
+    /* border-radius: 10px; */
+    box-shadow: grey 0px 4px 3px 0px;
+}
+
+.newsDestaque img {
+    width: 10%;
+    margin: 5px 2%;
+}
+
+.newsDestaque h3 {
+    text-align: left;
+    font-size: 20px;
+    margin: 0px 115px 5px 0px;
+}
+
+.newsDestaque p {
+    margin: 0 5px;
+    text-align: justify;
 }
 
 #videos {
@@ -55,8 +93,6 @@ a {
 }
 
 #videosDestaque {
-    background-color: wheat;
-    /* font-family: Arial, Helvetica, sans-serif; */
     display: flex;
     justify-content: left;
     text-shadow: gray 1px 1px 5px;
@@ -94,7 +130,6 @@ a {
 }
 
 #tituloDestaque {
-    /* font-family: Arial, Helvetica, sans-serif; */
     display: flex;
     justify-content: left;
     text-shadow: gray 1px 1px 5px;
@@ -131,20 +166,21 @@ a {
 
 .produtoDestaque h3 {
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 10px 0;
 }
 
 .produtoDestaque p {
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    margin: 0 5px;
+    margin: 10px;
     text-align: justify;
 }
 
 #rodape {
-    background-color: white;
+    background-color: #D97904;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 20px 0 40px 84px;
+    color: white;
 }
 
 #redesSociais {
@@ -169,7 +205,7 @@ a {
     margin-bottom: 10px;
 }
 
-#email button {
+button {
     background-color: yellow;
     width: 100px;
     height: 45px;
@@ -177,4 +213,9 @@ a {
     border: 0;
     box-shadow: yellowgreen 3px 3px 6px;
     font-size: 20px;
+}
+
+#formulario {
+    width: 50%;
+    margin: 0 100px;
 }
