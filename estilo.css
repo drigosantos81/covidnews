@@ -11,7 +11,7 @@ body {
 #conteudo {
     background-color: white;
     margin: 0% 10%;
-    padding: 0%;
+    padding: 0px 0px 5px 0%;
 }
 
 .header {
@@ -54,6 +54,16 @@ a {
     justify-content: space-around;
     margin: 0px;
     padding: 0px 0px 5px 0px;
+    font-weight: bold;
+}
+
+#navbar div a {
+    color: blue;
+}
+
+#navbar div a:hover {
+    transition: 700ms;
+    color: red;
 }
 
 #news {
@@ -86,6 +96,43 @@ a {
     text-align: justify;
 }
 
+.newsDestaqueSobre {
+    display: flex;
+    justify-content: space-between;
+    border: gray 0px solid;
+    margin: 20px 25px 20px 10px;
+    box-shadow: grey 0px 4px 3px 0px;
+}
+
+.newsDestaqueSobre img {
+    width: 22%;
+    margin: 5px 5% 5px 2%;
+}
+
+.newsDestaqueSobre h3 {
+    text-align: left;
+    font-size: 20px;
+    margin: 0px 115px 5px 0px;
+}
+
+.newsDestaqueSobre p {
+    margin: 0 5px;
+    text-align: justify;
+}
+
+.perfil {
+    border-radius: 30px;
+}
+
+.linkedin {
+    width: 35%;
+}
+
+.textoSobre {
+    padding-right: 1%;
+    margin-right: 2%;
+}
+
 #videos {
     background-color: wheat;
     margin: 0;
@@ -105,6 +152,23 @@ a {
 }
 
 #videosDestaque h2 {
+    margin: 5px 0;
+    padding: 5px 5px 2px 5px;
+}
+
+#videosDestaqueNews {
+    display: flex;
+    justify-content: center;
+    text-shadow: gray 1px 1px 5px;
+    margin: 0px 30px;
+}
+
+#videosDestaqueNews img {
+    width: 4%;
+    margin-right: 10px;
+}
+
+#videosDestaqueNews h2 {
     margin: 5px 0;
     padding: 5px 5px 2px 5px;
 }
@@ -178,7 +242,6 @@ a {
 #rodape {
     background-color: #D97904;
     display: flex;
-    /* justify-content: center; */
     padding: 20px 0 40px 84px;
     color: white;
 }
@@ -186,7 +249,6 @@ a {
 #redesSociais {
     width: 50%;
     margin: 0 -30px;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     padding: 10px 0 80px 0;
 }
 
